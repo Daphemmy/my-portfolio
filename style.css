@@ -6,17 +6,10 @@
 }
 
 body {
-  width: 1, 920px;
+  max-width: 1, 920px;
   height: 69.33px;
   gap: 42.67px;
   margin: auto;
-}
-
-.navv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 30px;
 }
 
 .navbar {
@@ -24,8 +17,31 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 60px;
-  width: 80%;
+  width: 100%;
   height: 40px;
+}
+
+.FemDev {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  max-width: 1920px;
+  height: 120px;
+  padding: 0px 85.33px 0px 85.33px;
+}
+
+.full-nav {
+  width: 1749.33px;
+  height: 69.33px;
+  gap: 42.67px;
+  opacity: 0px;
+}
+
+.navv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
 }
 
 .navbar a {
@@ -43,8 +59,12 @@ body {
   color: black;
 }
 
-.navbar .active {
+.navbar .Anchor .active {
   color: #5e3bee;
+}
+
+.navbar .Anchor a {
+  color: black;
 }
 
 .contact {
@@ -55,9 +75,31 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 21.33px;
   font-weight: 400;
+}
+
+.contact a {
   color: #5e3bee;
 }
 
+@media (max-width: 500px) {
+  body {
+    width: 330px;
+  }
+
+  /* .navbar img {
+    width: 100px;
+  } */
+
+  .FemDev {
+    padding: 20px;
+  }
+
+  .navbar div {
+    gap: 20px;
+  }
+}
+
+/* ========================================== */
 .home {
   width: 1, 920px;
   min-height: 100px;
@@ -115,12 +157,19 @@ body {
   height: 729.74px;
 }
 
+@media (max-width: 500px) {
+  .home-content {
+    width: 330px;
+    min-height: 100px;
+  }
+}
+
 /* ========================= */
 
 .section-2 {
   margin: auto;
-  width: Fixed (1, 920px) px;
-  height: Hug (906.33px) px;
+  width: 1920px;
+  height: 906.33px;
   top: 1116px;
   padding: 149.33px 85.33px 149.33px 85.33px;
   gap: 106.67px;
@@ -133,9 +182,9 @@ body {
   align-items: center;
   padding-top: 50px;
   /* gap: 32px; */
-  max-width: 100%;
+  /* max-width: 100%; */
 
-  width: Fill (1, 749.33px) px;
+  width: 1749.33px;
   height: Hug (370.67px) px;
   gap: 42.67px;
   opacity: 0px;
@@ -180,7 +229,7 @@ body {
 .section-2 h4 {
   width: 87px;
   height: 32px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   line-height: 32px;
   text-align: center;
@@ -191,7 +240,7 @@ body {
   height: 77px;
   gap: 0px;
   opacity: 0px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 76.8px;
@@ -202,7 +251,7 @@ body {
   width: 341px;
   height: 45px;
   color: #282938;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 .section-2 img {
   width: 79px;
@@ -214,7 +263,7 @@ body {
 }
 
 .section-2 p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   line-height: 20px;
   text-align: left;
   color: #282938;
@@ -222,6 +271,17 @@ body {
   height: 128px;
   gap: 0px;
   opacity: 0px;
+}
+
+@media (max-width: 500px) {
+  .skills div p {
+    padding: 0 25px;
+  }
+
+  .skills div img {
+    width: 50px;
+    height: 55px;
+  }
 }
 
 /* ============================ */
@@ -251,7 +311,7 @@ body {
   gap: 24px;
   opacity: 0px;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   /* font-size: 21.33px; */
   /* font-weight: 600; */
   line-height: 32px;
@@ -264,7 +324,7 @@ body {
   gap: 24px;
   opacity: 0px;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 64px;
   /* font-weight: 700; */
   line-height: 76.8px;
@@ -277,7 +337,7 @@ body {
   gap: 24px;
   opacity: 0px;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -300,7 +360,7 @@ body {
   gap: 0px;
   opacity: 0px;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 21.33px;
   font-weight: 600;
   line-height: 32px;
@@ -312,7 +372,7 @@ body {
   height: 77px;
   gap: 0px;
   opacity: 0px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 64px;
   /* font-weight: 700; */
   line-height: 76.8px;
@@ -331,11 +391,12 @@ body {
   gap: 0px;
   opacity: 0px;
 
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   /* font-size: 21.33px; */
   font-weight: 400;
   line-height: 32px;
   text-align: left;
+  padding-bottom: 20px;
 }
 
 .section-4 .main-rec-pro {
@@ -349,13 +410,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: Hug (229px) px;
-  height: Fixed (74.67px) px;
+  width: 229px;
+  height: 74.67px;
   padding: 13.33px 21.33px 13.33px 21.33px;
   gap: 6px;
   border-radius: 10.67px;
   opacity: 0px;
   background: #7e69d3;
+}
+
+.section-4 .github img {
+  width: 27.78px;
+  height: 27.1px;
+  top: 2.78px;
+  left: 2.78px;
+}
+
+.section-4 .github p {
+  width: 147px;
+  height: 32px;
   color: #ffffff;
 }
 
@@ -368,15 +441,15 @@ body {
   gap: 10.67px;
   opacity: 0px; */
 
-  width: Fill (1, 749.33px) px;
-  height: Hug (654.33px) px;
+  width: 1, 749.33px;
+  height: 654.33px;
   gap: 85.33px;
   opacity: 0px;
 }
 
 .section-4 .web {
-  width: Fill (554.67px) px;
-  height: Hug (654.33px) px;
+  width: 554.67px;
+  height: 654.33px;
   gap: 0px;
   opacity: 0px;
 }
@@ -390,14 +463,14 @@ body {
 }
 
 .section-4 .mid-website {
-  width: Fill (554.67px) px;
-  height: Hug (254.33px) px;
+  width: 554.67px;
+  height: 254.33px;
   padding: 32px 0px 0px 0px;
   gap: 32px;
   opacity: 0px;
 
-  width: Fill (490.67px) px;
-  height: Hug (119.67px) px;
+  width: 490.67px;
+  height: 119.67px;
   gap: 10.67px;
   opacity: 0px;
 }
@@ -406,15 +479,21 @@ body {
   display: flex;
   justify-content: start;
   align-items: start;
-  width: Hug (143px) px;
-  height: Hug (38.67px) px;
+  width: 143px;
+  height: 38.67px;
   padding: 0px 0px 10.67px 0px;
   gap: 19px;
   border: 0px 0px 1.33px 0px;
   opacity: 0px;
-  padding-top: 30px;
   position: absolute;
   border-bottom: solid 1px #5e3bee;
+
+  /* width: Hug (143px) px;
+  height: Hug (38.67px) px;
+  padding: 0px 0px 10.67px 0px;
+  gap: 21.33px;
+  border: 0px 0px 1.33px 0px;
+  opacity: 0px; */
 }
 
 .section-4 .vector img {
@@ -443,9 +522,10 @@ body {
 
 .section-5 .main-cus-test {
   width: 1, 749.33px;
-  height: 130.33 px;
+  height: 130.33px;
   gap: 21.33px;
   opacity: 0px;
+  padding-bottom: 180px;
 }
 
 .section-5 h4 {
@@ -479,7 +559,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 1, 749.33px;
-  height: 366.52 px;
+  height: 366.52px;
   gap: 42.67px;
   opacity: 0px;
 }
@@ -501,10 +581,10 @@ body {
   gap: 5.33px;
   opacity: 0px;
   margin-left: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
-.section-5 p {
+.section-5 .mid-con p {
   width: 469.33px;
   height: 96px;
   gap: 0px;
@@ -520,63 +600,46 @@ body {
 
 .section-5 .avatar {
   display: flex;
-  justify-content: start;
-  align-items: start;
-  /* width: 238px; */
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  width: 238px;
   height: 74.67px;
-  /* gap: 21.33px; */
+  gap: 21.33px;
   /* opacity: 0px; */
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .section-5 .avatar img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 74.67px;
   height: 74.67px;
-  gap: 0px;
-  opacity: 0px;
-  position: relative;
-  left: 25px;
+  /* position: relative; */
+  /* left: 25px; */
 }
 
-.section-5 h4 p {
-  /* width: 96px;
-  height: 32px;
-  gap: 0px;
-  opacity: 0px; */
-  display: flex;
-  justify-content: start;
-  align-items: start;
-
+.section-5 .avatar .names {
+  text-align: center;
   width: 142px;
   height: 64px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.section .names {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  width: 142px;
-  height: 64px;
-  gap: 0px;
-  opacity: 0px;
+  margin: 0;
 }
 
 .section .names h4 {
   width: 142px;
   height: 32px;
-  gap: 0px;
-  opacity: 0px;
-  position: absolute;
-  left: 20px;
+  /* text-align: center; */
+  /* padding: 20px; */
+  margin-bottom: 10px;
 }
 
 .section .names p {
   width: 96px;
   height: 32px;
-  gap: 0px;
-  opacity: 0px;
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
 /* ==================================== */
 
@@ -785,13 +848,17 @@ footer .love p {
   height: 28px;
   gap: 0px;
   opacity: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer .love-ach {
+  width: 459px;
+  height: 28px;
+  display: flex;
+  gap: 32px;
 }
 
 footer .love-ach a {
-  width: 459px;
-  height: 28px;
-  gap: 52px;
-  opacity: 0px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: black;
